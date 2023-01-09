@@ -1,0 +1,60 @@
+perro
+gato
+pescado
+leon
+jirafa
+elefante
+vaca
+oveja
+caballo
+canguro
+pollo
+colibri
+cuy
+mono
+#include <iostream>
+#include <windows.h>
+#include <stdlib.h>
+#include <dos.h>
+#include <cstring>
+
+using namespace std;
+
+int main(){
+    system("COLOR 0e");
+    system("cls");
+    printf("\e[?251");
+
+    int bar1=177;
+    float porcentaje;
+    char caracter [1];
+
+    do {
+        cout <<"Escriba el porcentaje de la barra: ";
+        cin >> porcentaje;
+    }while (porcentaje > 100);
+    
+    cout << "Escriba el caracter que desee utilizar: ";
+    cin >> *caracter;
+
+    cout<<"\n\n\n\t\t\tLoading....";
+    cout<<"\n\n\n\t\t";
+
+    for (int i = 0; i < 25; i++)
+        cout << (char)bar1;  
+    
+
+    for (int i = 0; i <= porcentaje; i++){
+        
+        cout << "\r\t";
+        cout << i<< "%" << "\t";    
+
+    for (int j = 1; j < i/4; j++)
+        cout <<*caracter;
+        Sleep (50);
+    }
+     
+    cout << endl;
+    system ("pause");
+    return 0;
+}

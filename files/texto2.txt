@@ -1,0 +1,10 @@
+Humano 1
+Humano 2
+Humano 3
+
+
+char jsNombre [40]="Jaime Sebastian Sanchez Gordon"; 
+
+// for (int z = 0; z < i/4; z++)
+    //     cout <<jsNombre[z];
+      

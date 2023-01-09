@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "terminal.integrated.env.windows": {
+        "CMDER_ROOT": "C:\\CMD"
+    },
+    "terminal.integrated.shellArgs.windows": [
+        "/k",
+        "%CMDER_ROOT%\\vendor\\bin\\vscode_init.cmd"
+    ],
+}
