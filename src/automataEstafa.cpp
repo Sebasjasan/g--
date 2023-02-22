@@ -34,16 +34,14 @@ int getIndexAlfabeto(string str)
 int main ( void)
 {
     int **mt = NULL;
-    int Q=7, L=3;
+    int Q=5, L=3;
     mt = matrizNew(Q,L);
 
     mt[0][0]=1;         mt[0][1]=2;         mt[0][2]=TKErr;   
     mt[1][0]=2;         mt[1][1]=3;         mt[1][2]=TKErr;   
     mt[2][0]=3;         mt[2][1]=4;         mt[2][2]=TKErr;   
-    mt[3][0]=4;         mt[3][1]=5;         mt[3][2]=TKErr;   
-    mt[4][0]=5;         mt[4][1]=6;         mt[4][2]=TKFin;   
-    mt[5][0]=6;         mt[5][1]=TKErr;     mt[5][2]=TKFin;   
-    mt[6][0]=TKErr;     mt[6][1]=TKErr;     mt[6][2]=TKFin;   
+    mt[3][0]=4;         mt[3][1]=TKErr;     mt[3][2]=TKErr;   
+    mt[4][0]=4;         mt[4][1]=4;         mt[4][2]=TKFin;     
     
     int q=0, l=0;
     string moneda;
